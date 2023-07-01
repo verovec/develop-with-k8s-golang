@@ -1,0 +1,26 @@
+domain: develop-with-k8s.local
+
+registry:
+  host: develop-with-k8s:5111
+  endpoint: develop-with-k8s:5111
+
+global:
+  storageClass: local-path
+
+api:
+  image:
+    name: api
+    tag: latest
+    pullPolicy: Always
+  replicas: 1
+  resources:
+    enabled: true
+    limits:
+      cpu: 1
+      memory: 512Mi
+    requests:
+      cpu: 0.1
+      memory: 256Mi
+  scaler:
+    minReplicas: 1
+    maxReplicas: 5

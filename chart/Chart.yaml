@@ -1,0 +1,14 @@
+name: api
+
+apiVersion: v1
+type: application
+version: 0.0.1
+
+
+description: gtpapiary
+home: https://github.com/jmdrv/gptapiary
+
+
+maintainers:
+- email: verove.clement@gmail.com
+  name: Clement
